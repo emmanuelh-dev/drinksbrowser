@@ -6,7 +6,7 @@ const Bebida = ({ bebida }) => {
 
   return (
     <Col md={6} lg={3}>
-      <Card className="mb-4">
+      <Card className="mb-4 shadow" border="white">
         <Card.Img
           variant="top"
           src={bebida.strDrinkThumb}
@@ -15,9 +15,12 @@ const Bebida = ({ bebida }) => {
 
         <Card.Body>
           <Card.Title>{bebida.strDrink}</Card.Title>
-
+          <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
           <Button
-            variant={"warning"}
+            variant={"primary"}
             className="w-100 text-uppercase mt-2 text-white"
             onClick={() => {
               handleModalClick();

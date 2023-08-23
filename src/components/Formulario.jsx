@@ -14,8 +14,8 @@ const Formulario = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (Object.values(busqueda).includes("")) {
-      setAlerta("Todos los campos son obligatorios");
+    if (Object.values(categoria).includes("")) {
+      setAlerta("Selecciona una categoria");
       return;
     }
     setAlerta("");
